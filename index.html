@@ -3,11 +3,1720 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="image/png" sizes="16x16" rel="icon" href="images/icon.png" />
     <title>accordion</title>
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container"></div>
+    <header>
+      <div class="container"><h1>Аккордеон</h1></div>
+    </header>
+    <main>
+      <div class="container">
+        <h2>Аккордеон на css</h2>
+        <div class="type-box">
+          <!-- независимые вкладки -->
+          <div class="box-item">
+            <h3>Независимые вкладки</h3>
+            <div class="accordion">
+              <div class="accordion-item por">
+                <input
+                  class="accordion-item_input"
+                  type="checkbox"
+                  id="accordion-1"
+                />
+                <label class="accordion-item_trigger db" for="accordion-1"
+                  >Знаки пунктуации</label
+                >
+                <div class="accordion-item_content">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>символ</th>
+                        <th>html-код</th>
+                        <th>десятичный код</th>
+                        <th>описание</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><span>&nbsp;</span></td>
+                        <td>&amp;nbsp;</td>
+                        <td>&amp;#160;</td>
+                        <td>Неразрывный пробел</td>
+                      </tr>
+                      <tr>
+                        <td><span>&ensp;</span></td>
+                        <td>&amp;ensp;</td>
+                        <td>&amp;#8194;</td>
+                        <td>Узкий пробел (еn-шириной в букву n)</td>
+                      </tr>
+                      <tr>
+                        <td>&emsp;</td>
+                        <td>&amp;emsp;</td>
+                        <td>&amp;#8195;</td>
+                        <td>Широкий пробел (em-шириной в букву m)</td>
+                      </tr>
+                      <tr>
+                        <td>–</td>
+                        <td>&amp;ndash;</td>
+                        <td>&amp;#8211;</td>
+                        <td>Узкое тире (en-тире)</td>
+                      </tr>
+                      <tr>
+                        <td>—</td>
+                        <td>&amp;mdash;</td>
+                        <td>&amp;#8212;</td>
+                        <td>Широкое тире (em -тире)</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>&amp;shy;</td>
+                        <td>&amp;#173;</td>
+                        <td>Мягкий перенос</td>
+                      </tr>
+                      <tr>
+                        <td>а́</td>
+                        <td></td>
+                        <td>&amp;#769;</td>
+                        <td>Ударение, ставится после "ударной" буквы</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="accordion-item por">
+                <input
+                  class="accordion-item_input"
+                  type="checkbox"
+                  id="accordion-2"
+                />
+                <label class="accordion-item_trigger db" for="accordion-2"
+                  >Значки</label
+                >
+                <div class="accordion-item_content">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>символ</th>
+                        <th>html-код</th>
+                        <th>десятичный код</th>
+                        <th>описание</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>©</td>
+                        <td>&amp;copy;</td>
+                        <td>&amp;#169;</td>
+                        <td>Копирайт</td>
+                      </tr>
+                      <tr>
+                        <td>®</td>
+                        <td>&amp;reg;</td>
+                        <td>&amp;#174;</td>
+                        <td>Знак зарегистрированной торговой марки</td>
+                      </tr>
+                      <tr>
+                        <td>™</td>
+                        <td>&amp;trade;</td>
+                        <td>&amp;#8482;</td>
+                        <td>Знак торговой марки</td>
+                      </tr>
+                      <tr>
+                        <td>º</td>
+                        <td>&amp;ordm;</td>
+                        <td>&amp;#186;</td>
+                        <td>Копье Марса</td>
+                      </tr>
+                      <tr>
+                        <td>ª</td>
+                        <td>&amp;ordf;</td>
+                        <td>&amp;#170;</td>
+                        <td>Зеркало Венеры</td>
+                      </tr>
+                      <tr>
+                        <td>‰</td>
+                        <td>&amp;permil;</td>
+                        <td>&amp;#8240;</td>
+                        <td>Промилле</td>
+                      </tr>
+                      <tr>
+                        <td>π</td>
+                        <td>&amp;pi;</td>
+                        <td>&amp;#960;</td>
+                        <td>Пи (используйте Times New Roman)</td>
+                      </tr>
+                      <tr>
+                        <td>¦</td>
+                        <td>&amp;brvbar;</td>
+                        <td>&amp;#166;</td>
+                        <td>Вертикальный пунктир</td>
+                      </tr>
+                      <tr>
+                        <td>§</td>
+                        <td>&amp;sect;</td>
+                        <td>&amp;#167;</td>
+                        <td>Параграф</td>
+                      </tr>
+                      <tr>
+                        <td>°</td>
+                        <td>&amp;deg;</td>
+                        <td>&amp;#176;</td>
+                        <td>Градус</td>
+                      </tr>
+                      <tr>
+                        <td>µ</td>
+                        <td>&amp;micro;</td>
+                        <td>&amp;#181;</td>
+                        <td>Знак "микро"</td>
+                      </tr>
+                      <tr>
+                        <td>¶</td>
+                        <td>&amp;para;</td>
+                        <td>&amp;#182;</td>
+                        <td>Знак абзаца</td>
+                      </tr>
+                      <tr>
+                        <td>…</td>
+                        <td>&amp;hellip;</td>
+                        <td>&amp;#8230;</td>
+                        <td>Многоточие</td>
+                      </tr>
+                      <tr>
+                        <td>‾</td>
+                        <td>&amp;oline;</td>
+                        <td>&amp;#8254;</td>
+                        <td>Надчеркивание</td>
+                      </tr>
+                      <tr>
+                        <td>&acute;</td>
+                        <td>&amp;acute;</td>
+                        <td>&amp;#180;</td>
+                        <td>Знак ударения</td>
+                      </tr>
+                      <tr>
+                        <td>№</td>
+                        <td></td>
+                        <td>&amp;#8470;</td>
+                        <td>Знак номера</td>
+                      </tr>
+                      <tr>
+                        <td>🔍</td>
+                        <td></td>
+                        <td>&amp;#128269;</td>
+                        <td>Лупа (наклонённая влево)</td>
+                      </tr>
+                      <tr>
+                        <td>🔎</td>
+                        <td></td>
+                        <td>&amp;#128270;</td>
+                        <td>Лупа (наклонённая вправо)</td>
+                      </tr>
+                      <tr>
+                        <td>☎</td>
+                        <td></td>
+                        <td>&amp;#9742;</td>
+                        <td>Телефон</td>
+                      </tr>
+                      <tr>
+                        <td>✉</td>
+                        <td></td>
+                        <td>&amp;#9993;</td>
+                        <td>Конверт, email, почта</td>
+                      </tr>
+                      <tr>
+                        <td>💾</td>
+                        <td></td>
+                        <td>&amp;#128190;</td>
+                        <td>Дискета</td>
+                      </tr>
+                      <tr>
+                        <td>🛠</td>
+                        <td></td>
+                        <td>&amp;#128736;</td>
+                        <td>Молоток и гаечный ключ, настройка</td>
+                      </tr>
+                      <tr>
+                        <td>🔒</td>
+                        <td></td>
+                        <td>&amp;#128274;</td>
+                        <td>Замок закрыт</td>
+                      </tr>
+                      <tr>
+                        <td>🔓</td>
+                        <td></td>
+                        <td>&amp;#128275;</td>
+                        <td>Замок открыт</td>
+                      </tr>
+                      <tr>
+                        <td>🔔</td>
+                        <td></td>
+                        <td>&amp;#128276;</td>
+                        <td>Колокольчик</td>
+                      </tr>
+                      <tr>
+                        <td>🔕</td>
+                        <td></td>
+                        <td>&amp;#128277;</td>
+                        <td>Колокольчик перечеркнутый</td>
+                      </tr>
+                      <tr>
+                        <td>🗑</td>
+                        <td></td>
+                        <td>&amp;#128465;</td>
+                        <td>Урна</td>
+                      </tr>
+                      <tr>
+                        <td>🔥</td>
+                        <td></td>
+                        <td>&amp;#128293;</td>
+                        <td>Огонь</td>
+                      </tr>
+                      <tr>
+                        <td>🛇</td>
+                        <td></td>
+                        <td>&amp;#128711;</td>
+                        <td>Запрещено</td>
+                      </tr>
+                      <tr>
+                        <td>⛔</td>
+                        <td></td>
+                        <td>&amp;#9940;</td>
+                        <td>Вход запрещен (кирпич)</td>
+                      </tr>
+                      <tr>
+                        <td>⛳</td>
+                        <td></td>
+                        <td>&amp;#9971;</td>
+                        <td>
+                          Флаг в воронке, местоположение, место встречи, гольф
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- одна активная вкладка -->
+          <div class="box-item">
+            <h3>Одна активная вкладка</h3>
+            <div class="accordion">
+              <div class="accordion-item por">
+                <input
+                  class="accordion-item_input"
+                  type="radio"
+                  id="accordion-3"
+                  name="accordion"
+                />
+                <label for="accordion-3" class="accordion-item_trigger db"
+                  >Знаки арифметических и математических операций</label
+                >
+                <div class="accordion-item_content">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>символ</th>
+                        <th>html-код</th>
+                        <th>десятичный код</th>
+                        <th>описание</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>&times;</td>
+                        <td>&amp;times;</td>
+                        <td>&amp;#215;</td>
+                        <td>Умножить</td>
+                      </tr>
+                      <tr>
+                        <td>&divide;</td>
+                        <td>&amp;divide;</td>
+                        <td>&amp;#247;</td>
+                        <td>Разделить</td>
+                      </tr>
+                      <tr>
+                        <td><</td>
+                        <td>&amp;lt;</td>
+                        <td>&amp;#60;</td>
+                        <td>Меньше</td>
+                      </tr>
+                      <tr>
+                        <td>></td>
+                        <td>&amp;gt;</td>
+                        <td>&amp;#62;</td>
+                        <td>Больше</td>
+                      </tr>
+                      <tr>
+                        <td>±</td>
+                        <td>&amp;plusmn;</td>
+                        <td>&amp;#177;</td>
+                        <td>Плюс/минус</td>
+                      </tr>
+                      <tr>
+                        <td>¹</td>
+                        <td>&amp;sup1;</td>
+                        <td>&amp;#185;</td>
+                        <td>Степень 1</td>
+                      </tr>
+                      <tr>
+                        <td>²</td>
+                        <td>&amp;sup2;</td>
+                        <td>&amp;#178;</td>
+                        <td>Степень 2</td>
+                      </tr>
+                      <tr>
+                        <td>³</td>
+                        <td>&amp;sup3;</td>
+                        <td>&amp;#179;</td>
+                        <td>Степень 3</td>
+                      </tr>
+                      <tr>
+                        <td>¬</td>
+                        <td>&amp;not;</td>
+                        <td>&amp;#172;</td>
+                        <td>Отрицание</td>
+                      </tr>
+                      <tr>
+                        <td>¼</td>
+                        <td>&amp;frac14;</td>
+                        <td>&amp;#188;</td>
+                        <td>Одна четвертая</td>
+                      </tr>
+                      <tr>
+                        <td>½</td>
+                        <td>&amp;frac12;</td>
+                        <td>&amp;#189;</td>
+                        <td>Одна вторая</td>
+                      </tr>
+                      <tr>
+                        <td>¾</td>
+                        <td>&amp;frac34;</td>
+                        <td>&amp;#190;</td>
+                        <td>Три четверти</td>
+                      </tr>
+                      <tr>
+                        <td>&frasl;</td>
+                        <td>&amp;frasl;</td>
+                        <td>&amp;#8260;</td>
+                        <td>Дробная черта</td>
+                      </tr>
+                      <tr>
+                        <td>&minus;</td>
+                        <td>&amp;minus;</td>
+                        <td>&amp;#8722;</td>
+                        <td>Минус</td>
+                      </tr>
+                      <tr>
+                        <td>≤</td>
+                        <td>&amp;le;</td>
+                        <td>&amp;#8804;</td>
+                        <td>Меньше или равно</td>
+                      </tr>
+                      <tr>
+                        <td>≥</td>
+                        <td>&amp;ge;</td>
+                        <td>&amp;#8805;</td>
+                        <td>Больше или равно</td>
+                      </tr>
+                      <tr>
+                        <td>≈</td>
+                        <td>&amp;asymp;</td>
+                        <td>&amp;#8776;</td>
+                        <td>Приблизительно (почти) равно</td>
+                      </tr>
+                      <tr>
+                        <td>≠</td>
+                        <td>&amp;ne;</td>
+                        <td>&amp;#8800;</td>
+                        <td>Не равно</td>
+                      </tr>
+                      <tr>
+                        <td>≡</td>
+                        <td>&amp;equiv;</td>
+                        <td>&amp;#8801;</td>
+                        <td>Тождественно</td>
+                      </tr>
+                      <tr>
+                        <td>√</td>
+                        <td>&amp;radic;</td>
+                        <td>&amp;#8730;</td>
+                        <td>Квадратный корень (радикал)</td>
+                      </tr>
+                      <tr>
+                        <td>∞</td>
+                        <td>&amp;infin;</td>
+                        <td>&amp;#8734;</td>
+                        <td>Бесконечность</td>
+                      </tr>
+                      <tr>
+                        <td>∑</td>
+                        <td>&amp;sum;</td>
+                        <td>&amp;#8721;</td>
+                        <td>Знак суммирования</td>
+                      </tr>
+                      <tr>
+                        <td>∏</td>
+                        <td>&amp;prod;</td>
+                        <td>&amp;#8719;</td>
+                        <td>Знак произведения</td>
+                      </tr>
+                      <tr>
+                        <td>∂</td>
+                        <td>&amp;part;</td>
+                        <td>&amp;#8706;</td>
+                        <td>Частичный дифференциал</td>
+                      </tr>
+                      <tr>
+                        <td>∫</td>
+                        <td>&amp;int;</td>
+                        <td>&amp;#8747;</td>
+                        <td>Интеграл</td>
+                      </tr>
+                      <tr>
+                        <td>∀</td>
+                        <td>&amp;forall;</td>
+                        <td>&amp;#8704;</td>
+                        <td>Для всех (видно только если жирным шрифтом)</td>
+                      </tr>
+                      <tr>
+                        <td>∃</td>
+                        <td>&amp;exist;</td>
+                        <td>&amp;#8707;</td>
+                        <td>Существует</td>
+                      </tr>
+                      <tr>
+                        <td>∅</td>
+                        <td>&amp;empty;</td>
+                        <td>&amp;#8709;</td>
+                        <td>Пустое множество</td>
+                      </tr>
+                      <tr>
+                        <td>Ø</td>
+                        <td>&amp;Oslash;</td>
+                        <td>&amp;#216;</td>
+                        <td>Диаметр</td>
+                      </tr>
+                      <tr>
+                        <td>∈</td>
+                        <td>&amp;isin;</td>
+                        <td>&amp;#8712;</td>
+                        <td>Принадлежит</td>
+                      </tr>
+                      <tr>
+                        <td>∉</td>
+                        <td>&amp;notin;</td>
+                        <td>&amp;#8713;</td>
+                        <td>Не принадлежит</td>
+                      </tr>
+                      <tr>
+                        <td>∋</td>
+                        <td>&amp;ni;</td>
+                        <td>&amp;#8727;</td>
+                        <td>Содержит</td>
+                      </tr>
+                      <tr>
+                        <td>&sub;</td>
+                        <td>&amp;sub;</td>
+                        <td>&amp;#8834;</td>
+                        <td>Является подмножеством</td>
+                      </tr>
+                      <tr>
+                        <td>⊃</td>
+                        <td>&amp;sup;</td>
+                        <td>&amp;#8835;</td>
+                        <td>Является надмножеством</td>
+                      </tr>
+                      <tr>
+                        <td>⊄</td>
+                        <td>&amp;nsub;</td>
+                        <td>&amp;#8836;</td>
+                        <td>Не является подмножеством</td>
+                      </tr>
+                      <tr>
+                        <td>⊆</td>
+                        <td>&amp;sube;</td>
+                        <td>&amp;#8838;</td>
+                        <td>Является подмножеством либо равно</td>
+                      </tr>
+                      <tr>
+                        <td>⊇</td>
+                        <td>&amp;supe;</td>
+                        <td>&amp;#8839;</td>
+                        <td>Является надмножеством либо равно</td>
+                      </tr>
+                      <tr>
+                        <td>⊕</td>
+                        <td>&amp;oplus;</td>
+                        <td>&amp;#8853;</td>
+                        <td>Плюс в кружке</td>
+                      </tr>
+                      <tr>
+                        <td>⊗</td>
+                        <td>&amp;otimes;</td>
+                        <td>&amp;#8855;</td>
+                        <td>Знак умножения в кружке</td>
+                      </tr>
+                      <tr>
+                        <td>⊥</td>
+                        <td>&amp;perp;</td>
+                        <td>&amp;#8869;</td>
+                        <td>Перпендикулярно</td>
+                      </tr>
+                      <tr>
+                        <td>∠</td>
+                        <td>&amp;ang;</td>
+                        <td>&amp;#8736;</td>
+                        <td>Угол</td>
+                      </tr>
+                      <tr>
+                        <td>∧</td>
+                        <td>&amp;and;</td>
+                        <td>&amp;#8743;</td>
+                        <td>Логическое И</td>
+                      </tr>
+                      <tr>
+                        <td>&or;</td>
+                        <td>&amp;or;</td>
+                        <td>&amp;#8744;</td>
+                        <td>Логическое ИЛИ</td>
+                      </tr>
+                      <tr>
+                        <td>∩</td>
+                        <td>&amp;cap;</td>
+                        <td>&amp;#8745;</td>
+                        <td>Пересечение</td>
+                      </tr>
+                      <tr>
+                        <td>&cup;</td>
+                        <td>&amp;cup;</td>
+                        <td>&amp;#8746;</td>
+                        <td>Объединение</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="accordion-item por">
+                <input
+                  class="accordion-item_input"
+                  type="radio"
+                  id="accordion-4"
+                  name="accordion"
+                />
+                <label for="accordion-4" class="accordion-item_trigger db"
+                  >Знаки валют</label
+                >
+                <div class="accordion-item_content">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>символ</th>
+                        <th>html-код</th>
+                        <th>десятичный код</th>
+                        <th>описание</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>€</td>
+                        <td>&amp;euro;</td>
+                        <td>&amp;#8364;</td>
+                        <td>Евро</td>
+                      </tr>
+                      <tr>
+                        <td>¢</td>
+                        <td>&amp;cent;</td>
+                        <td>&amp;#162;</td>
+                        <td>Цент</td>
+                      </tr>
+                      <tr>
+                        <td>£</td>
+                        <td>&amp;pound;</td>
+                        <td>&amp;#163;</td>
+                        <td>Фунт</td>
+                      </tr>
+                      <tr>
+                        <td>¤</td>
+                        <td>&amp;current;</td>
+                        <td>&amp;#164;</td>
+                        <td>Знак валюты</td>
+                      </tr>
+                      <tr>
+                        <td>¥</td>
+                        <td>&amp;yen;</td>
+                        <td>&amp;#165;</td>
+                        <td>Знак йены и юаня</td>
+                      </tr>
+                      <tr>
+                        <td>ƒ</td>
+                        <td>&amp;fnof;</td>
+                        <td>&amp;#402;</td>
+                        <td>Знак флорина</td>
+                      </tr>
+                      <tr>
+                        <td>₽</td>
+                        <td></td>
+                        <td>&amp;#8381;</td>
+                        <td>Знак рубля</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>Аккордеон на jQuery</h2>
+        <div class="type-box">
+          <!-- jQuery независимые вкладки-->
+          <div class="box-item">
+            <h3>Независимые вкладки</h3>
+            <div class="accordion">
+              <div class="accordion-item-jq">
+                <div class="accordion-item_trigger-jq">Кавычки</div>
+                <div class="accordion-item_content-jq">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>символ</th>
+                        <th>html-код</th>
+                        <th>десятичный код</th>
+                        <th>описание</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>"</td>
+                        <td>&amp;quot;</td>
+                        <td>&amp;#34;</td>
+                        <td>Двойная кавычка</td>
+                      </tr>
+                      <tr>
+                        <td>&</td>
+                        <td>&amp;amp;</td>
+                        <td>&amp;#38;</td>
+                        <td>Амперсанд</td>
+                      </tr>
+                      <tr>
+                        <td>«</td>
+                        <td>&amp;laquo;</td>
+                        <td>&amp;#171;</td>
+                        <td>Левая типографская кавычка (кавычка-елочка)</td>
+                      </tr>
+                      <tr>
+                        <td>»</td>
+                        <td>&amp;raquo;</td>
+                        <td>&amp;#187;</td>
+                        <td>Правая типографская кавычка (кавычка-елочка)</td>
+                      </tr>
+                      <tr>
+                        <td>&#8249;</td>
+                        <td></td>
+                        <td>&amp;#8249;</td>
+                        <td>Одиночная угловая кавычка открывающая</td>
+                      </tr>
+                      <tr>
+                        <td>&#8250;</td>
+                        <td></td>
+                        <td>&amp;#8250;</td>
+                        <td>Одиночная угловая кавычка закрывающая</td>
+                      </tr>
+                      <tr>
+                        <td>&prime;</td>
+                        <td>&amp;prime;</td>
+                        <td>&amp;#8242;</td>
+                        <td>Штрих (минуты, футы)</td>
+                      </tr>
+                      <tr>
+                        <td>″</td>
+                        <td>&amp;Prime;</td>
+                        <td>&amp;#8243;</td>
+                        <td>Двойной штрих (секунды, дюймы)</td>
+                      </tr>
+                      <tr>
+                        <td>&lsquo;</td>
+                        <td>&amp;lsquo;</td>
+                        <td>&amp;#8216;</td>
+                        <td>Левая верхняя одиночная кавычка</td>
+                      </tr>
+                      <tr>
+                        <td>&rsquo;</td>
+                        <td>&amp;rsquo;</td>
+                        <td>&amp;#8217;</td>
+                        <td>Правая верхняя одиночная кавычка</td>
+                      </tr>
+                      <tr>
+                        <td>&sbquo;</td>
+                        <td>&amp;sbquo;</td>
+                        <td>&amp;#8218;</td>
+                        <td>Правая нижняя одиночная кавычка</td>
+                      </tr>
+                      <tr>
+                        <td>“</td>
+                        <td>&amp;ldquo;</td>
+                        <td>&amp;#8220;</td>
+                        <td>Кавычка-лапка левая</td>
+                      </tr>
+                      <tr>
+                        <td>”</td>
+                        <td>&amp;rdquo;</td>
+                        <td>&amp;#8221;</td>
+                        <td>Кавычка-лапка правая верхняя</td>
+                      </tr>
+                      <tr>
+                        <td>„</td>
+                        <td>&amp;bdquo;</td>
+                        <td>&amp;#8222;</td>
+                        <td>Кавычка-лапка правая нижняя</td>
+                      </tr>
+                      <tr>
+                        <td>❛</td>
+                        <td></td>
+                        <td>&amp;#10075;</td>
+                        <td>Одиночная английская кавычка открывающая</td>
+                      </tr>
+                      <tr>
+                        <td>❜</td>
+                        <td></td>
+                        <td>&amp;#10076;</td>
+                        <td>Одиночная английская кавычка закрывающая</td>
+                      </tr>
+                      <tr>
+                        <td>❝</td>
+                        <td></td>
+                        <td>&amp;#10077;</td>
+                        <td>Двойная английская кавычка открывающая</td>
+                      </tr>
+                      <tr>
+                        <td>❞</td>
+                        <td></td>
+                        <td>&amp;#10078;</td>
+                        <td>Двойная английская кавычка закрывающая</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="accordion-item-jq">
+                <div class="accordion-item_trigger-jq">Стрелки</div>
+                <div class="accordion-item_content-jq">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>символ</th>
+                        <th>html-код</th>
+                        <th>десятичный код</th>
+                        <th>описание</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>←</td>
+                        <td>&amp;larr;</td>
+                        <td>&amp;#8592;</td>
+                        <td>Стрелка влево</td>
+                      </tr>
+                      <tr>
+                        <td>↑</td>
+                        <td>&amp;uarr;</td>
+                        <td>&amp;#8593;</td>
+                        <td>Стрелка вверх</td>
+                      </tr>
+                      <tr>
+                        <td>→</td>
+                        <td>&amp;rarr;</td>
+                        <td>&amp;#8594;</td>
+                        <td>Стрелка вправо</td>
+                      </tr>
+                      <tr>
+                        <td>↓</td>
+                        <td>&amp;darr;</td>
+                        <td>&amp;#8595;</td>
+                        <td>Стрелка вниз</td>
+                      </tr>
+                      <tr>
+                        <td>↔</td>
+                        <td>&amp;harr;</td>
+                        <td>&amp;#8596;</td>
+                        <td>Стрелка влево и вправо</td>
+                      </tr>
+                      <tr>
+                        <td>↕</td>
+                        <td></td>
+                        <td>&amp;#8597;</td>
+                        <td>Стрелка вверх и вниз</td>
+                      </tr>
+                      <tr>
+                        <td>↵</td>
+                        <td>&amp;crarr;</td>
+                        <td>&amp;#8629;</td>
+                        <td>Возврат каретки</td>
+                      </tr>
+                      <tr>
+                        <td>⇐</td>
+                        <td>&amp;lArr;</td>
+                        <td>&amp;#8656;</td>
+                        <td>Двойная стрелка влево</td>
+                      </tr>
+                      <tr>
+                        <td>⇑</td>
+                        <td>&amp;uArr;</td>
+                        <td>&amp;#8657;</td>
+                        <td>Двойная стрелка вверх</td>
+                      </tr>
+                      <tr>
+                        <td>⇒</td>
+                        <td>&amp;rArr;</td>
+                        <td>&amp;#8658;</td>
+                        <td>Двойная стрелка вправо</td>
+                      </tr>
+                      <tr>
+                        <td>⇓</td>
+                        <td>&amp;dArr;</td>
+                        <td>&amp;#8659;</td>
+                        <td>Двойная стрелка вниз</td>
+                      </tr>
+                      <tr>
+                        <td>⇔</td>
+                        <td>&amp;hArr;</td>
+                        <td>&amp;#8660;</td>
+                        <td>Двойная стрелка влево и вправо</td>
+                      </tr>
+                      <tr>
+                        <td>⇕</td>
+                        <td></td>
+                        <td>&amp;#8661;</td>
+                        <td>Двойная стрелка вверх и вниз</td>
+                      </tr>
+                      <tr>
+                        <td>▲</td>
+                        <td></td>
+                        <td>&amp;#9650;</td>
+                        <td>Треугольная стрелка вверх</td>
+                      </tr>
+                      <tr>
+                        <td>▼</td>
+                        <td></td>
+                        <td>&amp;#9660;</td>
+                        <td>Треугольная стрелка вниз</td>
+                      </tr>
+                      <tr>
+                        <td>►</td>
+                        <td></td>
+                        <td>&amp;#9658;</td>
+                        <td>Треугольная стрелка вправо</td>
+                      </tr>
+                      <tr>
+                        <td>◄</td>
+                        <td></td>
+                        <td>&amp;#9668;</td>
+                        <td>Треугольная стрелка влево</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- jQuery одна активная вкладка-->
+          <div class="box-item">
+            <h3>Одна активная вкладка</h3>
+            <div class="accordion">
+              <div class="accordion-item-jq2">
+                <div class="accordion-item_trigger-jq2">
+                  Звездочки, снежинки, шестеренки
+                </div>
+                <div class="accordion-item_content-jq2">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>символ</th>
+                        <th>html-код</th>
+                        <th>десятичный код</th>
+                        <th>описание</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>☃</td>
+                        <td></td>
+                        <td>&amp;#9731;</td>
+                        <td>Снеговик</td>
+                      </tr>
+                      <tr>
+                        <td>❄</td>
+                        <td></td>
+                        <td>&amp;#10052;</td>
+                        <td>Снежинка</td>
+                      </tr>
+                      <tr>
+                        <td>❅</td>
+                        <td></td>
+                        <td>&amp;#10053;</td>
+                        <td>Зажатая трилистниками снежинка</td>
+                      </tr>
+                      <tr>
+                        <td>❆</td>
+                        <td></td>
+                        <td>&amp;#10054;</td>
+                        <td>Жирная остроугольная снежинка</td>
+                      </tr>
+                      <tr>
+                        <td>★</td>
+                        <td></td>
+                        <td>&amp;#9733;</td>
+                        <td>Закрашенная звезда</td>
+                      </tr>
+                      <tr>
+                        <td>☆</td>
+                        <td></td>
+                        <td>&amp;#9734;</td>
+                        <td>Незакрашенная звезда</td>
+                      </tr>
+                      <tr>
+                        <td>✪</td>
+                        <td></td>
+                        <td>&amp;#10026;</td>
+                        <td>Незакрашенная звезда в закрашенном круге</td>
+                      </tr>
+                      <tr>
+                        <td>✫</td>
+                        <td></td>
+                        <td>&amp;#10027;</td>
+                        <td>
+                          Закрашенная звезда с незакрашенным кругом внутри
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>✯</td>
+                        <td></td>
+                        <td>&amp;#10031;</td>
+                        <td>Вращающаяся звезда</td>
+                      </tr>
+                      <tr>
+                        <td>⚝</td>
+                        <td></td>
+                        <td>&amp;#9885;</td>
+                        <td>Начерченная белая звезда</td>
+                      </tr>
+                      <tr>
+                        <td>⚪</td>
+                        <td></td>
+                        <td>&amp;#9898;</td>
+                        <td>Средний незакрашенный круг</td>
+                      </tr>
+                      <tr>
+                        <td>⚫</td>
+                        <td></td>
+                        <td>&amp;#9899;</td>
+                        <td>Средний закрашенный круг</td>
+                      </tr>
+                      <tr>
+                        <td>⚹</td>
+                        <td></td>
+                        <td>&amp;#9913;</td>
+                        <td>Секстиле (типа снежинка)</td>
+                      </tr>
+                      <tr>
+                        <td>✵</td>
+                        <td></td>
+                        <td>&amp;#10037;</td>
+                        <td>Восьмиконечная вращающаяся звезда</td>
+                      </tr>
+                      <tr>
+                        <td>❉</td>
+                        <td></td>
+                        <td>&amp;#10057;</td>
+                        <td>Звёздочка с шарообразными окончаниями</td>
+                      </tr>
+                      <tr>
+                        <td>❋</td>
+                        <td></td>
+                        <td>&amp;#10059;</td>
+                        <td>
+                          Жирная восьмиконечная каплеобразная
+                          звёздочка-пропеллер
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>✺</td>
+                        <td></td>
+                        <td>&amp;#10042;</td>
+                        <td>Шестнадцатиконечная звёздочка</td>
+                      </tr>
+                      <tr>
+                        <td>✹</td>
+                        <td></td>
+                        <td>&amp;#10041;</td>
+                        <td>Двенадцатиконечная закрашенная звезда</td>
+                      </tr>
+                      <tr>
+                        <td>✸</td>
+                        <td></td>
+                        <td>&amp;#10040;</td>
+                        <td>
+                          Жирная восьмиконечная прямолинейная закрашенная звезда
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>✶</td>
+                        <td></td>
+                        <td>&amp;#10038;</td>
+                        <td>Шестиконечная закрашенная звезда</td>
+                      </tr>
+                      <tr>
+                        <td>✷</td>
+                        <td></td>
+                        <td>&amp;#10039;</td>
+                        <td>Восьмиконечная прямолинейная закрашенная звезда</td>
+                      </tr>
+                      <tr>
+                        <td>✴</td>
+                        <td></td>
+                        <td>&amp;#10036;</td>
+                        <td>Восьмиконечная закрашенная звезда</td>
+                      </tr>
+                      <tr>
+                        <td>✳</td>
+                        <td></td>
+                        <td>&amp;#10035;</td>
+                        <td>Восьмиконечная звёздочка</td>
+                      </tr>
+                      <tr>
+                        <td>✲</td>
+                        <td></td>
+                        <td>&amp;#10034;</td>
+                        <td>Звёздочка с незакрашенным центром</td>
+                      </tr>
+                      <tr>
+                        <td>✱</td>
+                        <td></td>
+                        <td>&amp;#10033;</td>
+                        <td>Жирная звёздочка</td>
+                      </tr>
+                      <tr>
+                        <td>✧</td>
+                        <td></td>
+                        <td>&amp;#10023;</td>
+                        <td>
+                          Заострённая четырёхконечная незакрашенная звезда
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>✦</td>
+                        <td></td>
+                        <td>&amp;#10022;</td>
+                        <td>Заострённая четырёхконечная закрашенная звезда</td>
+                      </tr>
+                      <tr>
+                        <td>⍟</td>
+                        <td></td>
+                        <td>&amp;#9055;</td>
+                        <td>Звезда в круге</td>
+                      </tr>
+                      <tr>
+                        <td>⊛</td>
+                        <td></td>
+                        <td>&amp;#8859;</td>
+                        <td>Снежинка в круге</td>
+                      </tr>
+                      <tr>
+                        <td>⚙</td>
+                        <td></td>
+                        <td>&amp;#9881;</td>
+                        <td>Шестерёнка</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="accordion-item-jq2">
+                <div class="accordion-item_trigger-jq2">Часы, время</div>
+                <div class="accordion-item_content-jq2">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>символ</th>
+                        <th>html-код</th>
+                        <th>десятичный код</th>
+                        <th>описание</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>⏰</td>
+                        <td></td>
+                        <td>&amp;#9200;</td>
+                        <td>Будильник</td>
+                      </tr>
+                      <tr>
+                        <td>⌚</td>
+                        <td></td>
+                        <td>&amp;#8986;</td>
+                        <td>Наручные часы</td>
+                      </tr>
+                      <tr>
+                        <td>⌛</td>
+                        <td></td>
+                        <td>&amp;#8987;</td>
+                        <td>Песочные часы</td>
+                      </tr>
+                      <tr>
+                        <td>⏳</td>
+                        <td></td>
+                        <td>&amp;#9203;</td>
+                        <td>Песочные часы</td>
+                      </tr>
+                      <tr>
+                        <td>🕰</td>
+                        <td></td>
+                        <td>&amp;#128368;</td>
+                        <td>Каминные часы</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>Аккордеон на javaScript</h2>
+        <div class="type-box">
+          <!-- js независимые вкладки-->
+          <div class="box-item">
+            <h3>Независимые вкладки</h3>
+            <div class="accordion">
+              <div class="accordion-item-js">
+                <div class="accordion-item_trigger-js">
+                  Маркеры, птички, галочки, check mark, крестики
+                </div>
+                <div class="accordion-item_content-js">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>символ</th>
+                        <th>html-код</th>
+                        <th>десятичный код</th>
+                        <th>описание</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>•</td>
+                        <td>&amp;bull;</td>
+                        <td>&amp;#8226;</td>
+                        <td>Простой маркер</td>
+                      </tr>
+                      <tr>
+                        <td>○</td>
+                        <td></td>
+                        <td>&amp;#9675;</td>
+                        <td>Круг</td>
+                      </tr>
+                      <tr>
+                        <td>·</td>
+                        <td>&amp;middot;</td>
+                        <td>&amp;#183;</td>
+                        <td>Средняя точка</td>
+                      </tr>
+                      <tr>
+                        <td>†</td>
+                        <td></td>
+                        <td>&amp;#8224;</td>
+                        <td>Крестик</td>
+                      </tr>
+                      <tr>
+                        <td>‡</td>
+                        <td></td>
+                        <td>&amp;#8225;</td>
+                        <td>Двойной крестик</td>
+                      </tr>
+                      <tr>
+                        <td>♠</td>
+                        <td>&amp;spades;</td>
+                        <td>&amp;#9824;</td>
+                        <td>Пики</td>
+                      </tr>
+                      <tr>
+                        <td>♣</td>
+                        <td>&amp;clubs;</td>
+                        <td>&amp;#9827;</td>
+                        <td>Трефы</td>
+                      </tr>
+                      <tr>
+                        <td>♥</td>
+                        <td>&amp;hearts;</td>
+                        <td>&amp;#9829;</td>
+                        <td>Червы</td>
+                      </tr>
+                      <tr>
+                        <td>♦</td>
+                        <td>&amp;diams;</td>
+                        <td>&amp;#9830;</td>
+                        <td>Бубны</td>
+                      </tr>
+                      <tr>
+                        <td>◊</td>
+                        <td>&amp;loz;</td>
+                        <td>&amp;#9674;</td>
+                        <td>Ромб</td>
+                      </tr>
+                      <tr>
+                        <td>❤</td>
+                        <td></td>
+                        <td>&amp;#10084;</td>
+                        <td>Жирное сердце</td>
+                      </tr>
+                      <tr>
+                        <td>✓</td>
+                        <td></td>
+                        <td>&amp;#10003;</td>
+                        <td>Символ галочка</td>
+                      </tr>
+                      <tr>
+                        <td>✔</td>
+                        <td></td>
+                        <td>&amp;#10004;</td>
+                        <td>Жирная отметка галочкой</td>
+                      </tr>
+                      <tr>
+                        <td>𐄂</td>
+                        <td></td>
+                        <td>&amp;#65794;</td>
+                        <td>Крестик</td>
+                      </tr>
+                      <tr>
+                        <td>🗸</td>
+                        <td></td>
+                        <td>&amp;#128504;</td>
+                        <td>Тонкая галочка</td>
+                      </tr>
+                      <tr>
+                        <td>✅</td>
+                        <td></td>
+                        <td>&amp;#9989;</td>
+                        <td>Жирная незакрашенная отметка галочка</td>
+                      </tr>
+                      <tr>
+                        <td>☑</td>
+                        <td></td>
+                        <td>&amp;#9745;</td>
+                        <td>Галочка в квадрате</td>
+                      </tr>
+                      <tr>
+                        <td>🗹</td>
+                        <td></td>
+                        <td>&amp;#128505;</td>
+                        <td>Жирная галочка в квадрате</td>
+                      </tr>
+                      <tr>
+                        <td>⚠</td>
+                        <td></td>
+                        <td>&amp;#9888;</td>
+                        <td>Внимание!</td>
+                      </tr>
+                      <tr>
+                        <td>❌</td>
+                        <td></td>
+                        <td>&amp;#10060;</td>
+                        <td>X, знак умножения, крестик, удалить</td>
+                      </tr>
+                      <tr>
+                        <td>❎</td>
+                        <td></td>
+                        <td>&amp;#10062;</td>
+                        <td>Белый крест в квадрате</td>
+                      </tr>
+                      <tr>
+                        <td>✖</td>
+                        <td></td>
+                        <td>&amp;#10006;</td>
+                        <td>Крест, жирный знак умножения</td>
+                      </tr>
+                      <tr>
+                        <td>⨻</td>
+                        <td></td>
+                        <td>&amp;#10811;</td>
+                        <td>
+                          Знак умножения в треугольнике, пересечение
+                          равнозначных дорог
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>🔁</td>
+                        <td></td>
+                        <td>&amp;#128257;</td>
+                        <td>
+                          Разомкнутый круг из стрелок вправо и влево по часовой
+                          стрелке
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>📍</td>
+                        <td></td>
+                        <td>&amp;#128205;</td>
+                        <td>
+                          Булавка, метка, маркер местоположения, геолокация
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>👥</td>
+                        <td></td>
+                        <td>&amp;#128101;</td>
+                        <td>Люди, два человека</td>
+                      </tr>
+                      <tr>
+                        <td>👉</td>
+                        <td></td>
+                        <td>&amp;#128073;</td>
+                        <td>Рука, указывающая указательным пальцем вправо</td>
+                      </tr>
+                      <tr>
+                        <td>👈</td>
+                        <td></td>
+                        <td>&amp;#128072;</td>
+                        <td>Рука, указывающая указательным пальцем влево</td>
+                      </tr>
+                      <tr>
+                        <td>👆</td>
+                        <td></td>
+                        <td>&amp;#128070;</td>
+                        <td>Рука, указывающая указательным пальцем вверх</td>
+                      </tr>
+                      <tr>
+                        <td>👇</td>
+                        <td></td>
+                        <td>&amp;#128071;</td>
+                        <td>Рука, указывающая указательным пальцем вниз</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="accordion-item-js">
+                <div class="accordion-item_trigger-js">
+                  Карандаши, перья, кисти
+                </div>
+                <div class="accordion-item_content-js">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>символ</th>
+                        <th>html-код</th>
+                        <th>десятичный код</th>
+                        <th>описание</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>✍</td>
+                        <td></td>
+                        <td>&amp;#9997;</td>
+                        <td>Пишущая рука</td>
+                      </tr>
+                      <tr>
+                        <td>✎</td>
+                        <td></td>
+                        <td>&amp;#9998;</td>
+                        <td>Карандаш, направленный вправо-вниз</td>
+                      </tr>
+                      <tr>
+                        <td>✏</td>
+                        <td></td>
+                        <td>&amp;#9999;</td>
+                        <td>Карандаш</td>
+                      </tr>
+                      <tr>
+                        <td>✐</td>
+                        <td></td>
+                        <td>&amp;#10000;</td>
+                        <td>Карандаш, направленный вправо-вверх</td>
+                      </tr>
+                      <tr>
+                        <td>✑</td>
+                        <td></td>
+                        <td>&amp;#10001;</td>
+                        <td>Незакрашенное острие пера</td>
+                      </tr>
+                      <tr>
+                        <td>✒</td>
+                        <td></td>
+                        <td>&amp;#10002;</td>
+                        <td>Закрашенное острие пера</td>
+                      </tr>
+                      <tr>
+                        <td>🖌</td>
+                        <td></td>
+                        <td>&amp;#128396;</td>
+                        <td>Кисть, направленная влево-вниз</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- js одна активная вкладка-->
+          <div class="box-item">
+            <h3>Одна активная вкладка</h3>
+            <div class="accordion">
+              <div class="accordion-item-js2">
+                <div class="accordion-item_trigger-js2">Греческий алфавит</div>
+                <div class="accordion-item_content-js2">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th colspan="2">строчные</th>
+                        <th colspan="2">прописные</th>
+                        <th rowspan="2">описание</th>
+                      </tr>
+                      <tr>
+                        <th>символ</th>
+                        <th>html-код</th>
+                        <th>символ</th>
+                        <th>html-код</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>&alpha;</td>
+                        <td>&amp;alpha;</td>
+                        <td>&Alpha;</td>
+                        <td>&amp;Alpha;</td>
+                        <td>Альфа</td>
+                      </tr>
+                      <tr>
+                        <td>&beta;</td>
+                        <td>&amp;beta;</td>
+                        <td>&Beta;</td>
+                        <td>&amp;Beta;</td>
+                        <td>Бета</td>
+                      </tr>
+                      <tr>
+                        <td>&gamma;</td>
+                        <td>&amp;gamma;</td>
+                        <td>&Gamma;</td>
+                        <td>&amp;Gamma;</td>
+                        <td>Гамма</td>
+                      </tr>
+                      <tr>
+                        <td>&delta;</td>
+                        <td>&amp;delta;</td>
+                        <td>&Delta;</td>
+                        <td>&amp;Delta;</td>
+                        <td>Дельта</td>
+                      </tr>
+                      <tr>
+                        <td>&epsilon;</td>
+                        <td>&amp;epsilon;</td>
+                        <td>&Epsilon;</td>
+                        <td>&amp;Epsilon;</td>
+                        <td>Эпсилон</td>
+                      </tr>
+                      <tr>
+                        <td>&zeta;</td>
+                        <td>&amp;zeta;</td>
+                        <td>&Zeta;</td>
+                        <td>&amp;Zeta;</td>
+                        <td>Дзета</td>
+                      </tr>
+                      <tr>
+                        <td>&eta;</td>
+                        <td>&amp;eta;</td>
+                        <td>&Eta;</td>
+                        <td>&amp;Eta;</td>
+                        <td>Эта</td>
+                      </tr>
+                      <tr>
+                        <td>&theta;</td>
+                        <td>&amp;theta;</td>
+                        <td>&Theta;</td>
+                        <td>&amp;Theta;</td>
+                        <td>Тета</td>
+                      </tr>
+                      <tr>
+                        <td>&iota;</td>
+                        <td>&amp;iota;</td>
+                        <td>&Iota;</td>
+                        <td>&amp;Iota;</td>
+                        <td>Йота</td>
+                      </tr>
+                      <tr>
+                        <td>&kappa;</td>
+                        <td>&amp;kappa;</td>
+                        <td>&Kappa;</td>
+                        <td>&amp;Kappa;</td>
+                        <td>Каппа</td>
+                      </tr>
+                      <tr>
+                        <td>&lambda;</td>
+                        <td>&amp;lambda;</td>
+                        <td>&Lambda;</td>
+                        <td>&amp;Lambda;</td>
+                        <td>Лямбда</td>
+                      </tr>
+                      <tr>
+                        <td>&mu;</td>
+                        <td>&amp;mu;</td>
+                        <td>&Mu;</td>
+                        <td>&amp;Mu;</td>
+                        <td>Мю</td>
+                      </tr>
+                      <tr>
+                        <td>&nu;</td>
+                        <td>&amp;nu;</td>
+                        <td>&Nu;</td>
+                        <td>&amp;Nu;</td>
+                        <td>Ню</td>
+                      </tr>
+                      <tr>
+                        <td>&xi;</td>
+                        <td>&amp;xi;</td>
+                        <td>&Xi;</td>
+                        <td>&amp;Xi;</td>
+                        <td>Кси</td>
+                      </tr>
+                      <tr>
+                        <td>&omicron;</td>
+                        <td>&amp;omicron;</td>
+                        <td>&Omicron;</td>
+                        <td>&amp;Omicron;</td>
+                        <td>Омикрон</td>
+                      </tr>
+                      <tr>
+                        <td>&pi;</td>
+                        <td>&amp;pi;</td>
+                        <td>&Pi;</td>
+                        <td>&amp;Pi;</td>
+                        <td>Пи</td>
+                      </tr>
+                      <tr>
+                        <td>&rho;</td>
+                        <td>&amp;rho;</td>
+                        <td>&Rho;</td>
+                        <td>&amp;Rho;</td>
+                        <td>Ро</td>
+                      </tr>
+                      <tr>
+                        <td>&sigma;</td>
+                        <td>&amp;sigma;</td>
+                        <td>&Sigma;</td>
+                        <td>&amp;Sigma;</td>
+                        <td>Сигма</td>
+                      </tr>
+                      <tr>
+                        <td>&sigmaf;</td>
+                        <td>&amp;sigmaf;</td>
+                        <td></td>
+                        <td></td>
+                        <td>Окончательная сигма</td>
+                      </tr>
+                      <tr>
+                        <td>&tau;</td>
+                        <td>&amp;tau;</td>
+                        <td>&Tau;</td>
+                        <td>&amp;Tau;</td>
+                        <td>Тау</td>
+                      </tr>
+                      <tr>
+                        <td>&upsilon;</td>
+                        <td>&amp;upsilon;</td>
+                        <td>&Upsilon;</td>
+                        <td>&amp;Upsilon;</td>
+                        <td>Ипсилон</td>
+                      </tr>
+                      <tr>
+                        <td>&phi;</td>
+                        <td>&amp;phi;</td>
+                        <td>&Phi;</td>
+                        <td>&amp;Phi;</td>
+                        <td>Фи</td>
+                      </tr>
+                      <tr>
+                        <td>&chi;</td>
+                        <td>&amp;chi;</td>
+                        <td>&Chi;</td>
+                        <td>&amp;Chi;</td>
+                        <td>Хи</td>
+                      </tr>
+                      <tr>
+                        <td>&psi;</td>
+                        <td>&amp;psi;</td>
+                        <td>&Psi;</td>
+                        <td>&amp;Psi;</td>
+                        <td>Пси</td>
+                      </tr>
+                      <tr>
+                        <td>&omega;</td>
+                        <td>&amp;omega;</td>
+                        <td>&Omega;</td>
+                        <td>&amp;Omega;</td>
+                        <td>Омега</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="accordion-item-js2">
+                <div class="accordion-item_trigger-js2">Источники</div>
+                <div class="accordion-item_content-js2">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Ссылки на источники:</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <a
+                            href="https://htmlweb.ru/html/symbols.php?ysclid=lnqdgdvjis339596938"
+                            >Создание аккордеона</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a
+                            href="https://www.youtube.com/watch?v=O-Xkkq9gcSY&t=5s"
+                            >Специальные символы</a
+                          >
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="signature">
+          <picture>
+            <a href="https://remarkable-biscuit-ef6531.netlify.app"
+              ><img
+                src="images/signature.png"
+                class="signature__img"
+                alt="signature"
+            /></a>
+          </picture>
+          <span>&copy;2023</span><span>г.</span>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
