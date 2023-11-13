@@ -65,12 +65,24 @@ h3 {padding-bottom: 5px;}
 
 body {background: rgb(224,12,80);
     background: linear-gradient(307deg, rgba(224,12,80,0.6134103299522935) 0%, 
-	rgba(17,204,14,0.5966036072632177) 35%, rgba(14,21,225,0.4565475848542542) 100%);}
+	rgba(17,204,14,0.5966036072632177) 35%, rgba(14,21,225,0.4565475848542542) 100%);
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+    height: 100vh;
+}
+main {
+	position: relative;
+	width: 100%;
+	flex: 1;
+}
 
 header div {display: flex; align-items: center; justify-content: center;}
 footer div {display: flex; align-items: center; padding: 20px 0;}
 
-header, footer {background: rgb(0,0,0);
+header, footer {
+	width: 100%;
+	background: rgb(0,0,0);
 	background: linear-gradient(315deg, rgba(0,0,0,0.5041666324733018) 0%, 
 	rgba(0,0,0,0.09800416748730745) 55%, rgba(0,0,0,1) 88%);
 }
